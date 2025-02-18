@@ -1,0 +1,163 @@
+/* Estilos base para el header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo verticalmente */
+    padding: 1rem;
+    background-color: #1e1f20; /* Color de fondo del encabezado */
+    color: white;
+    position: relative; /* Permite que los elementos hijos (nav-links) usen position absolute */
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin: 1.25rem;
+    justify-content: flex-start; /* Alinea el logo a la izquierda */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    flex-direction: column;
+}
+
+.logo {
+    width: 4.5rem;
+    height: auto;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+}
+
+.institution-info {
+    text-align: center;
+    flex-grow: 1; /* Permite que el contenido ocupe el espacio restante */
+}
+
+.institution-name {
+    font-size: 1.5rem;
+}
+
+.sub-title {
+    font-size: 1rem;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: right;
+    padding: 0.5rem 1rem;
+    background-color: #0e0e0e;
+    border-radius: 0 0 15px 15px;
+}
+
+.menu-toggle {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #FFF;
+}
+
+.nav-links {
+    background-color: #0e0e0e;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Oculto por defecto */
+    flex-direction: column;
+    width: 100%; /* Mismo ancho que el header */
+    position: relative;
+    max-height: 0; /* Altura inicial 0 */
+    opacity: 0; /* Inicialmente invisible */
+    overflow: hidden; /* Ocultar el contenido que excede la altura */
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Transición suave */
+}
+
+.nav-links.active {
+    display: flex;
+    max-height: 500px; /* Altura máxima suficiente para mostrar todos los elementos */
+    opacity: 1; /* Hacer visible */
+}
+
+.nav-links li {
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-links a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #ffc451;
+    border-radius: 100px;
+    color: #000;
+}
+
+/* Media Query para pantallas grandes */
+@media (min-width: 950px) {
+    .logo-container {
+        justify-content: flex-start; /* Alinea el logo a la izquierda */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        flex-direction: unset;
+    }
+
+    .logo {
+        width: 7.5rem;
+        height: auto;
+        margin-left: 2rem; /* Despega el logo de la izquierda en pantallas grandes */
+        margin-right: -10rem; /* Reduce el espacio entre el logo y el texto */
+    }
+
+    .institution-info {
+        text-align: center; /* Centra el texto de la información institucional */
+        flex-grow: 1; /* Permite que el contenido ocupe el espacio restante */
+    }
+
+    .institution-name {
+        font-size: 1.75rem;
+    }
+
+    .sub-title {
+        font-size: 1.25rem;
+    }
+
+    .navbar {
+        justify-content: center; /* Centrar el menú horizontalmente */
+    }
+
+    .menu-toggle {
+        display: none; /* Ocultar el botón hamburguesa */
+    }
+
+    .nav-links {
+        display: flex; /* Mostrar el menú horizontalmente */
+        flex-direction: row;
+        justify-content: center; /* Centrar los elementos del menú */
+        position: static; /* Restaurar la posición estática */
+        width: auto; /* Restaurar el ancho automático */
+        background-color: transparent; /* Eliminar el fondo azul */
+        max-height: none; /* Eliminar la restricción de altura */
+        opacity: 1; /* Siempre visible */
+    }
+
+    .nav-links li {
+        margin: 0 1rem; /* Espaciado entre los elementos del menú */
+    }
+
+    .nav-links a {
+        color: #FFF;
+    }
+    
+    .nav-links a:hover {
+        background-color: #ffc451;
+        border-radius: 100px;
+        color: #000;
+    }
+}

@@ -1,0 +1,41 @@
+/* Estilos generales para el main */
+.credits-main {
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.credits-main h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.credits-main p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.credits-main strong {
+    color: #000;
+}
+
+/* Estilos para las secciones de créditos */
+.credits-section {
+    margin-bottom: 1.5rem;
+}
+
+.credits-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #004b8d;
+}
+
+.credits-section p {
+    font-size: 1rem;
+    margin: 0.25rem 0;
+}

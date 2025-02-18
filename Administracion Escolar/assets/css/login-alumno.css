@@ -1,0 +1,24 @@
+/* Estilos para el contenedor del campo de contraseña */
+.password-group {
+    position: relative;
+}
+
+.password-input-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el botón de "ojo" */
+.toggle-password {
+    background: none;
+    border: none;
+    color: #004b8d;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: -30px; /* Ajusta la posición del botón dentro del campo */
+    z-index: 10; /* Asegura que el botón esté sobre el campo */
+}
+
+.toggle-password:hover {
+    color: #003c6e;
+}

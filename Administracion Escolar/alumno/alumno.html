@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alumnos | Administración Escolar</title>
+        <!-- Estilos globales -->
+        <link rel="stylesheet" href="/components/styles.css">
+        <link rel="stylesheet" href="/components/header/header.css">
+        <link rel="stylesheet" href="/components/footer/footer.css">
+        <!-- Estilos especificos -->
+        <link rel="stylesheet" href="alumno.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header-container"></header>
+        <!-- Main Content -->
+        <main>
+            <!-- Contenedor principal -->
+            <div class="login-container">
+                <h1>Alumnos<br></h1>
+                <h2>Iniciar Sesión</h2>
+                <form id="login-form" class="login-form">
+                    <!-- Campo de número de cuenta -->
+                    <div class="form-group">
+                        <label for="account-number">Número de Cuenta (9 dígitos):</label>
+                        <input type="number" id="account-number" name="account-number" maxlength="9" placeholder="Ejemplo: 314123456" required>
+                    </div>
+
+                    <!-- Campo de fecha de nacimiento -->
+                    <div class="form-group">
+                        <label for="birthdate">Fecha de Nacimiento (8 dígitos, formato DDMMAAAA):</label>
+                        <input type="number" id="birthdate" name="birthdate" maxlength="8" placeholder="Ejemplo: 31042000" required>
+                    </div>
+
+                    <!-- Campo de contraseña -->
+                    <div class="form-group password-group">
+                        <label for="password">Contraseña (entre 8 y 16 caracteres):</label>
+                        <div class="password-input-container">
+                            <input type="password" id="password" name="password" maxlength="16" placeholder="Ingrese su contraseña" required>
+                            <button type="button" id="toggle-password" class="toggle-password">👁️</button>
+                        </div>
+                    </div>
+
+                    <!-- Botón de inicio de sesión -->
+                    <button type="submit" class="login-button">Iniciar Sesión</button>
+                </form>
+                <p id="error-message" class="error-message"></p>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer-container"></footer>
+
+        <script src="/components/components.js"></script>
+        <script src="alumno.js"></script>
+    </body>
+</html>

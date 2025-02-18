@@ -1,0 +1,88 @@
+/* Estilos generales */
+.announcements-section {
+    text-align: center; /* Centra el título de la sección */
+    padding: 0 2rem;
+    margin: 0.75rem 0;
+}
+
+.announcements-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.announcements-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los anuncios se apilen en filas */
+    gap: 1rem; /* Espaciado entre los anuncios */
+    justify-content: center; /* Centra los anuncios horizontalmente */
+}
+
+.announcement-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+    max-width: 400px; /* Ancho máximo en pantallas grandes */
+    display: flex;
+    flex-direction: row; /* Imagen a la izquierda, contenido a la derecha */
+    align-items: center; /* Alinea verticalmente la imagen y el contenido */
+    padding: 1rem;
+    transition: transform 0.3s ease; /* Efecto hover suave */
+    overflow: hidden;
+}
+
+.announcement-card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.announcement-image {
+    width: 80px; /* Tamaño de la imagen */
+    height: 80px;
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+    /* border-radius: 50%; Forma circular para la imagen */
+    margin-right: 1rem; /* Espaciado entre la imagen y el contenido */
+}
+
+.announcement-content {
+    flex-grow: 1; /* El contenido ocupa el espacio restante */
+    text-align: center; /* Alinea el texto a la izquierda dentro del cuadro */
+    overflow: hidden;
+}
+
+.announcement-title {
+    display: -webkit-box; /* Crea un contenedor flexible */
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #004b8d; /* Color destacado para el título */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.announcement-description {
+    display: -webkit-box; /* Crea un contenedor flexible */
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    color: #555; /* Color más suave para la descripción */
+    line-height: 1.4; /* Mejora la legibilidad */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) si el texto es demasiado largo */
+}
+
+.announcement-foot {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    color: #555; /* Color más suave para la descripción */
+}
+
+/* Media Queries para pantallas grandes */
+@media (min-width: 1024px) {
+    .announcements-container {
+        justify-content: center; /* Alinea los anuncios a la izquierda */
+    }
+    
+    .announcement-card {
+        width: calc(33.33% - 1rem); /* 3 anuncios por fila con espacio entre ellos */
+    }
+}

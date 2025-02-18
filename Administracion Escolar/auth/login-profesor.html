@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profesor | Administración Escolar</title>
+        <!-- Estilos globales -->
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/index.css">
+        <link rel="stylesheet" href="/assets/css/header.css">
+        <link rel="stylesheet" href="/assets/css/footer.css">
+        <!-- Estilos especificos -->
+        <link rel="stylesheet" href="/assets/css/login.css">
+        <link rel="stylesheet" href="/assets/css/login-profesor.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header-container"></header>
+        <!-- Main Content -->
+        <main>
+            <!-- Contenedor principal -->
+            <div class="login-container">
+                <h1>Profesor<br></h1>
+                <h2>Iniciar Sesión</h2>
+                <form id="teacher-login-form" class="login-form">
+                    <!-- Campo de RFC -->
+                    <div class="form-group">
+                        <label for="rfc">RFC:</label>
+                        <input type="text" id="rfc" name="rfc" minlength="13" maxlength="13" placeholder="Ejemplo: XYZC0202966X8" pattern="[A-Z]{4}[0-9]{6}[A-Z0-9]{3}" required>
+                    </div>
+                    <!-- Campo de número de trabajador -->
+                    <div class="form-group">
+                        <label for="employee-number">Número de Trabajador (6 dígitos):</label>
+                        <input type="text" id="employee-number" name="employee-number" minlength="6" maxlength="6" placeholder="Ejemplo: 123456" required>
+                    </div>
+                    <!-- Botón de inicio de sesión -->
+                    <button type="submit" class="login-button">Iniciar Sesión</button>
+                </form>
+                <p id="error-message" class="error-message"></p>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer-container"></footer>
+
+        <script src="/assets/js/components.js"></script>
+        <script src="/assets/js/auth/login.js"></script>
+        <script src="/assets/js/auth/login-profesor.js"></script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendario | Administración Escolar</title>
+    </head>
+    <body>
+        <!-- Main Content -->
+        <main>
+            <!-- Calendario Escolar -->
+            <section class="calendar-section">
+                <h2 class="calendar-title">Calendario Escolar</h2>
+                <p class="calendar-description">Selecciona un periodo para ver su calendario:</p>
+                
+                <div class="calendar-buttons">
+                    <button class="period-btn" data-pdf="/data/Calendario-Escolar-Periodo-2024-1.pdf">Periodo 2024-1</button>
+                    <button class="period-btn" data-pdf="/data/Calendario-Escolar-Periodo-2024-2.pdf">Periodo 2024-2</button>
+                    <button class="period-btn" data-pdf="/data/Calendario-Escolar-Periodo-2025-1.pdf">Periodo 2025-1</button>
+                    <button class="period-btn" data-pdf="/data/Calendario-Escolar-Periodo-2025-2.pdf">Periodo 2025-2</button>
+                </div>
+            
+                <!-- Contenedor del visor de PDF -->
+                <div class="pdf-viewer" id="pdf-viewer-container">
+                    <embed id="pdf-viewer" type="application/pdf" src="" width="100%" height="400px" />
+                </div>                
+            
+                <!-- Botón de descarga visible -->
+                <a id="download-btn" href="/data/Calendario-Escolar-Periodo-2025-2.pdf" download="Calendario-Escolar-Periodo-2025-2.pdf" class="download-btn">Descargar Calendario</a>
+            </section>         
+            
+        </main>
+    </body>
+</html>
