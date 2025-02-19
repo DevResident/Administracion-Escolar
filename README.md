@@ -71,6 +71,12 @@ Este es un proyecto web para la administración escolar en la Facultad de Contad
 - Gestión de alumnos y profesores
 - Mejoras en la interfaz y accesibilidad
 
+## 🖼 Capturas de pantalla
+A continuación, se presentan algunas capturas de pantalla del sistema en funcionamiento:
+![image](https://github.com/user-attachments/assets/aef374e4-1e6f-402d-835e-4e597088dccc)
+![image](https://github.com/user-attachments/assets/4fc7f708-af43-4078-a85e-6a700a5b10c6)
+![image](https://github.com/user-attachments/assets/9b89d571-a27a-49b3-919b-d237482182e6)
+
 ## 📜 Créditos
 Desarrollado por [Fernando Hurtado] para la Facultad de Contaduría y Administración - UNAM 🎓
 
