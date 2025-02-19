@@ -58,7 +58,7 @@ Este es un proyecto web para la administración escolar en la Facultad de Contad
 ## 🛠 Instalación y uso
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/DevResident/Administracion-Escolar.git
    ```
 2. Abrir el proyecto en **Visual Studio Code**
 3. Instalar la extensión **Live Server** si no la tienes
