@@ -72,7 +72,7 @@ Este es un proyecto web para la administración escolar en la Facultad de Contad
 - Mejoras en la interfaz y accesibilidad
 
 ## 📜 Créditos
-Desarrollado por [Tu Nombre] para la Facultad de Contaduría y Administración - UNAM 🎓
+Desarrollado por [Fernando Hurtado] para la Facultad de Contaduría y Administración - UNAM 🎓
 
 ## 📄 Licencia
 Este proyecto se encuentra bajo la licencia MIT. Puedes usarlo, modificarlo y distribuirlo libremente.
