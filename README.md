@@ -3,12 +3,12 @@
 Este es un proyecto web para la administración escolar en la Facultad de Contaduría y Administración de la UNAM. Actualmente, el desarrollo incluye un sistema de inicio de sesión para profesores y alumnos, junto con varias secciones informativas.
 
 ## Características
-- **Login para profesores y alumnos** ✅
+- **Login para profesores y alumnos**
 - **Estructura básica del sitio**: Header, Footer, Index
 - **Páginas adicionales**:
-  - Calendario 📅
-  - Créditos 🙌
-  - Directorio 📖
+  - Calendario
+  - Créditos
+  - Directorio
 
 ## Tecnologías utilizadas
 - **HTML, CSS y JavaScript** para el diseño y la funcionalidad
@@ -78,7 +78,7 @@ A continuación, se presentan algunas capturas de pantalla del sistema en funcio
 ![image](https://github.com/user-attachments/assets/9b89d571-a27a-49b3-919b-d237482182e6)
 
 ## Créditos
-Desarrollado por [Fernando Hurtado] para la Facultad de Contaduría y Administración - UNAM 🎓
+Desarrollado por [Fernando Hurtado] para la Facultad de Contaduría y Administración - UNAM
 
 ## Licencia
 Este proyecto se encuentra bajo la licencia MIT. Puedes usarlo, modificarlo y distribuirlo libremente.
